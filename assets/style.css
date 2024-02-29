@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+body{
+    font-family: Anta, sans-serif;
+}
+
+ul{
+    list-style: circle;
+    font-size: 15px;
+}
+
+ol{
+    list-style: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+.heading{
+    text-shadow: 1px 1px 1px black;
+    justify-content: center;
+}
+
+.contacts {
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 55%;
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    /* background-color: DodgerBlue; */
+  }
+  
+.flex-container > section {
+    background-color: #f1f1f1;
+    width: 50%;
+    margin: 10px;
+    line-height: 40px;
+    border: 2px solid black;
+  }
+
+
+
+@media screen and (max-width: 800px) {
+    .flex-container {
+        display: block;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .flex-container > section {
+        width: 90%;
+    }
+}
